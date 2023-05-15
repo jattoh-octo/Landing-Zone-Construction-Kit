@@ -5,10 +5,10 @@ resource "azurerm_windows_virtual_machine" "win_vm" {
   resource_group_name   = azurerm_resource_group.rg.name
   location              = azurerm_resource_group.rg.location
   size                  = "Standard_B2s"
-  admin_username        = "meshadmin"
+  admin_username        = "octoadmin"
   admin_password        = azurerm_key_vault_secret.winvmpassword.value
   network_interface_ids = [azurerm_network_interface.win_vm_nic.id]
-  computer_name         = "collie-windows"
+  computer_name         = "orbit-windows"
   os_disk {
     name                 = "${local.resource_name_prefix}-win-vm"
     caching              = "ReadWrite"
@@ -24,7 +24,7 @@ resource "azurerm_windows_virtual_machine" "win_vm" {
   # provisioner "remote-exec" {
   #   connection {
   #     type     = "winrm"
-  #     user     = "meshadmin"
+  #     user     = "orbitadmin"
   #     password = azurerm_key_vault_secret.winvmpassword.value
   #   }
 
@@ -41,7 +41,7 @@ resource "azurerm_dev_test_global_vm_shutdown_schedule" "win_vm_shutdown_schedul
   enabled            = true
 
   daily_recurrence_time = "2000"
-  timezone              = "W. Europe Standard Time"
+  timezone              = "East Standard Time"
 
   notification_settings {
     enabled         = false
