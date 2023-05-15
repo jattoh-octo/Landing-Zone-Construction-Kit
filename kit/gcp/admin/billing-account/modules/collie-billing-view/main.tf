@@ -1,11 +1,11 @@
 # note: this is a separate module so it's consumable independently of the kit modules we ship as part of 
 # landing zone construction kit
 
-resource "google_bigquery_table" "collie_billing_view" {
+resource "google_bigquery_table" "Orbit_billing_view" {
   deletion_protection = false
   project             = var.cloud_billing_export_project
   dataset_id          = var.cloud_billing_export_dataset_id
-  table_id            = "collie_billing_view"
+  table_id            = "Orbit_billing_view"
 
   view {
     query          = <<EOF

@@ -17,7 +17,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [google_bigquery_table.collie_billing_view](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/bigquery_table) | resource |
+| [google_bigquery_table.Orbit_billing_view](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/bigquery_table) | resource |
 
 ## Inputs
 

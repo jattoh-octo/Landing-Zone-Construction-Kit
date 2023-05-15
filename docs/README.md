@@ -22,26 +22,26 @@ features:
     details: Capture compliance requirements for your landing zones and document their implementation as policies.
   - title: Documentation
     details: Generate developer documentation for application teams building on your land zones and compliance documentation 
-footer: Copyright © 2022-present meshcloud GmbH
+footer: Copyright © 2022-present OCTOcloud GmbH
 ---
 
 ## Build Landing Zones easily
 
-Use [collie](https://github.com/meshcloud/collie-cli) cli to easily work with the landing zone construction kit
+Use [Orbit](https://github.com/OCTOcloud/Orbit-cli) cli to easily work with the landing zone construction kit
 
 ```shell
-# initialize a new collie repository
-collie init
+# initialize a new Orbit repository
+Orbit init
 
 # add a cloud foundation connecting your platforms
-collie foundation new "my-foundation"
+Orbit foundation new "my-foundation"
 
 # create a new kit module with an infrastructure as code template
-collie kit new "aws/organization-policies"   
+Orbit kit new "aws/organization-policies"   
 
 # apply the kit module to one of your cloud foundation's platforms
-collie kit apply "aws/organization-policies"
+Orbit kit apply "aws/organization-policies"
 
 # deploy all modules applied to the foundation to build your landing zone
-collie foundation deploy "my-foundation" 
+Orbit foundation deploy "my-foundation" 
 ```

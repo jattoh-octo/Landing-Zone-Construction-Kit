@@ -85,7 +85,7 @@ export default defineUserConfig({
   // configure default theme
   theme: defaultTheme({
     logo: "/images/hero.png",
-    repo: "meshcloud/landing-zone-construction-kit",
+    repo: "OCTOcloud/landing-zone-construction-kit",
     docsDir: "docs",
     darkMode: false,
 

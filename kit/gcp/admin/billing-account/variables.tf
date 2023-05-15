@@ -23,9 +23,9 @@ variable "cloud_billing_export_table_id" {
   description = "Name of the table holding the Cloud Billing export data inside the dataset identified by `cloud_billing_export_dataset_id`."
 }
 
-variable "enable_collie_view" {
+variable "enable_Orbit_view" {
   type        = bool
-  description = "When enabled, will create a view called `collie_billing_view` to be used by collie cli for GCP cost reporting"
+  description = "When enabled, will create a view called `Orbit_billing_view` to be used by Orbit cli for GCP cost reporting"
 }
 
 variable "service_account_name" {

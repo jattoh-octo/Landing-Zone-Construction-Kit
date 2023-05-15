@@ -1,7 +1,7 @@
 
 # Resource: Azure windows Virtual Machine
 resource "azurerm_windows_virtual_machine" "win_vm" {
-  name                  = "${local.resource_name_prefix}-collie-windows"
+  name                  = "${local.resource_name_prefix}-Orbit-windows"
   resource_group_name   = azurerm_resource_group.rg.name
   location              = azurerm_resource_group.rg.location
   size                  = "Standard_B2s"

@@ -50,12 +50,12 @@ resource "google_bigquery_table_iam_member" "cloudfoundation_tf_deploy_user" {
   member     = "serviceAccount:${var.service_account_email}"
 }
 
-module "collie_billing_view" {
+module "Orbit_billing_view" {
   depends_on = [
     google_bigquery_table_iam_member.cloudfoundation_tf_deploy_user # ensure permissions were set up before creating the view
   ]
-  count  = var.enable_collie_view ? 1 : 0
-  source = "./modules/collie-billing-view"
+  count  = var.enable_Orbit_view ? 1 : 0
+  source = "./modules/Orbit-billing-view"
 
   cloud_billing_export_project    = var.cloud_billing_export_project
   cloud_billing_export_dataset_id = var.cloud_billing_export_dataset_id

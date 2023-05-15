@@ -2,7 +2,7 @@
 
 A landing zone construction kit is always stored in a git (or other VCS) repository.
 This repository contains infrastructure as code and configuration files enabling a well-structured, opinionated workflow.
-The [collie](https://github.com/meshcloud/collie-cli) cli tool understands this structure and helps you work with it.
+The [Orbit](https://github.com/OCTOcloud/Orbit-cli) cli tool understands this structure and helps you work with it.
 
 The top-level of this hierarchy contains these folders:
 
@@ -14,7 +14,7 @@ The top-level of this hierarchy contains these folders:
 
 Configuration objects are stored in this repository directory hierarchy in the form of "literate" config files -
 markdown config files with YAML frontmatter.
-Most configuration files in a collie repository are `README.md` sitting at the root of their respective folder
+Most configuration files in a Orbit repository are `README.md` sitting at the root of their respective folder
 hierarchy. A markdown file with frontmatter generally looks like this:
 
 ```markdown
@@ -33,7 +33,7 @@ documentation.
 - the markdown should describe the configuration in a human readable format that is friendly to other stakeholders
   (e.g. developers, security auditors) working with your landing zones
 
-The collie cli tool validates configuration objects in the repository and reports any errors found.
+The Orbit cli tool validates configuration objects in the repository and reports any errors found.
 
 ## Foundations
 
